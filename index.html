@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatWeather? | 5-day Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css"/>
+    
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+        <p>It is <span id="time"></span> on <span id="date"></span></p>
+    </header>
+
+    <section id="big-wrapper">
+        <section id="search">
+            <section id="search-bar">
+                <h2>Search For A City</h2>
+                <form>
+                    <input type="text" id="cityname" name="city-name" placeholder="Enter Your City Here!">
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section id="search-history">
+            </section>
+            <button id="clearHistory">Clear History</button>
+        </section>
+
+        <section id="weather">
+            <section id="current">
+                <h2 id="city"></h2>
+                <div id="little-box">
+                    <img id='currentIcon' alt="weather icon">
+                    <p id="current-date"></p> 
+                </div>
+                <p id="temp">Temp: <span id="tempNum"></span> F</p>
+                <p>Wind: <span id="wind"></span> mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </section>
+
+            <section id="five-day">
+                <h2>5 Day Forecast</h2>
+                <section id="five-day-display">
+                    <section class="five-day-box">
+                        <p class="date"></p>
+                        <img alt="weather icon">
+                        <p>Temp: <span class="forecast-temp"></span> F</p>
+                        <p>Wind: <span class="forecast-wind"></span> mph</p>
+                        <p>Humidity: <span class="forecast-humidity"></span>%</p>
+                    </section>
+                    <section class="five-day-box">
+                        <p class="date"></p>
+                        <img alt="weather icon">
+                        <p>Temp: <span class="forecast-temp"></span> F</p>
+                        <p>Wind: <span class="forecast-wind"></span> mph</p>
+                        <p>Humidity: <span class="forecast-humidity"></span>%</p>
+                    </section>
+                    <section class="five-day-box">
+                        <p class="date"></p>
+                        <img alt="weather icon">
+                        <p>Temp: <span class="forecast-temp"></span> F</p>
+                        <p>Wind: <span class="forecast-wind"></span> mph</p>
+                        <p>Humidity: <span class="forecast-humidity"></span>%</p>
+                    </section>
+                    <section class="five-day-box">
+                        <p class="date"></p>
+                        <img alt="weather icon">
+                        <p>Temp: <span class="forecast-temp"></span> F</p>
+                        <p>Wind: <span class="forecast-wind"></span> mph</p>
+                        <p>Humidity: <span class="forecast-humidity"></span>%</p>
+                    </section>
+                    <section class="five-day-box">
+                        <p class="date"></p>
+                        <img alt="weather icon">
+                        <p>Temp: <span class="forecast-temp"></span> F</p>
+                        <p>Wind: <span class="forecast-wind"></span> mph</p>
+                        <p>Humidity: <span class="forecast-humidity"></span>%</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/de6d64e34e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="./Assets/JS/script.js"></script>
+
+    
+</body>
+</html>
